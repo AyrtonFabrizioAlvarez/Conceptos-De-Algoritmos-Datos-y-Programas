@@ -1,6 +1,6 @@
 program ejercicio11;
 
-procedure menorInscripcion(num:integer ; var min1Aux, min2Aux:integer ; apellido:string ; var min1, min2:string);
+procedure menorInscripcion(num:integer ; min1Aux, min2Aux:integer ; apellido:string ; var min1, min2:string);
 begin
 	if (num <= min1Aux) then
 	begin
@@ -16,7 +16,7 @@ begin
 	end
 end;
 
-procedure mayorInscripcion(num:integer ; var max1Aux, max2Aux:integer ; nombre:string ; var max1, max2:string);
+procedure mayorInscripcion(num:integer ; max1Aux, max2Aux:integer ; nombre:string ; var max1, max2:string);
 begin
 	if (num >= max1Aux) then
 	begin
@@ -73,7 +73,7 @@ BEGIN
 	until (numero = 1200);
 	writeln('Los apellidos correspondientes a los N de inscripcion mas bajos son ', min1, ' y ', min2);
 	writeln('Los nombres correspondientes a los N de inscripcion mas altos son ', max1, ' y ', max2);
-	writeln('El porcentaje de alumnos con N de inscripcion par son %', porcentaje(cantAlumnos, cantPares):1:0);
+	writeln('El porcentaje de alumnos con N de inscripcion par son ', porcentaje(cantAlumnos, cantPares):1:0, '%');
 END.
 
 Para cada alumno selee: número de inscripción, apellido y nombre. La lectura finaliza cuando se ingresa el alumno con número de

@@ -1,6 +1,6 @@
 program ejercicio10;
 
-procedure leerSecuencia(num:integer ; var pares, impares:integer ; suma:integer);
+procedure leerSecuencia(num:integer ; var pares, impares:integer);
 var
 	digito:integer;
 begin
@@ -11,23 +11,20 @@ begin
 			pares:= pares + digito
 		else
 			impares:= impares + 1;
-		suma:= suma + digito;
 		num:= num div 10;	
 	end
 end;
 	
 var
-numero, resultado, sumaDigPares, cantDigImpares:integer;
+numero, sumaDigPares, cantDigImpares:integer;
 BEGIN
-writeln(3 mod 2);
 	writeln('Ingrese un numero');
 	readln(numero);
-	while (numero <> 123456) do
+	while (numero <> 1234) do
 	begin
-		resultado:= 0;
 		sumaDigPares:= 0;
 		cantDigImpares:= 0;
-		leerSecuencia(numero, sumaDigPares, cantDigImpares, resultado);
+		leerSecuencia(numero, sumaDigPares, cantDigImpares);
 		writeln('La suma de los digitos pares de ', numero, ' es ', sumaDigPares);
 		writeln('El numero ', numero, ' tiene ', cantDigImpares, ' cantidad de digitos impares');
 		readln(numero)
