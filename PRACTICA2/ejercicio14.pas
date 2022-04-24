@@ -26,8 +26,7 @@ BEGIN
 		writeln('Ingrese la cantidad de Hectareas Sembradas')
 		readln(cantHectareasSembradas)
 		writeln('Ingrese el tipo de zona (1- zona fertil	2- zona estandar	3- zona arida)')
-		readln(tipo)
-		
+		readln(tipo)	
 		
 	until (cantHectareas = 900)
 	
