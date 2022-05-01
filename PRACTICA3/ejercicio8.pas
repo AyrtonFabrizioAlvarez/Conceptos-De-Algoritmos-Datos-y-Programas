@@ -94,8 +94,8 @@ var
 	cantEscuelas, cantEscuelasPorLocalidad, max1, max2, cantAlumnosActual, codigoActual, igualCantPeI:integer;
 
 BEGIN
-	max1:=-999;
-	max2:=-999;
+	max1:=-1
+	max2:=-1;
 	nomMax1:='';
 	nomMax2:='';
 	cantEscuelas:=0;
